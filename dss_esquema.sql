@@ -6,15 +6,15 @@ DROP SEQUENCE ft_nfe_id;
 
 TRUNCATE TABLE dm_produto;
 
-CREATE TABLE dm_tempo (
-  TempoID						      NUMBER(11) 	NOT NULL,
+CREATE TABLE pentaho.dm_tempo (
+  TempoID						      NUMERIC(11) 	NOT NULL,
   DataTempo 					    DATE   	    NOT NULL,
-  AnoTempo 					      NUMBER(4) 	NOT NULL,
-  MesTempo 					      NUMBER(2) 	NOT NULL,
-  DiaAnoTempo 				    NUMBER(3) 	NOT NULL,
-  DiaMesTempo				      NUMBER(2) 	NOT NULL,
-  DiaSemanaTempo 			    NUMBER(1) 	NOT NULL,
-  SemanaAnoTempo 			    NUMBER(2)   NOT NULL,
+  AnoTempo 					      NUMERIC(4) 	NOT NULL,
+  MesTempo 					      NUMERIC(2) 	NOT NULL,
+  DiaAnoTempo 				    NUMERIC(3) 	NOT NULL,
+  DiaMesTempo				      NUMERIC(2) 	NOT NULL,
+  DiaSemanaTempo 			    NUMERIC(1) 	NOT NULL,
+  SemanaAnoTempo 			    NUMERIC(2)   NOT NULL,
   DiaSemanaDescTempo 		  VARCHAR(15) NOT NULL,
   DiaSemanaDescAbrvTempo	CHAR(3) 		NOT NULL,
   MesDescTempo 				    VARCHAR(10) NOT NULL,
