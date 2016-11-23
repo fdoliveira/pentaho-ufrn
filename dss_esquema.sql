@@ -24,7 +24,7 @@ CREATE TABLE pentaho.dm_tempo (
 );
 
 CREATE TABLE ufrn.dm_tipo (
-  TipoID	NUMERIC(11) 	NOT NULL,
+  TipoID	INT             NOT NULL AUTO_INCREMENT,
   Fonte 	VARCHAR(100)   	NOT NULL,
   Resumo 	VARCHAR(100) 	NOT NULL,
   CONSTRAINT dm_tipo_pk PRIMARY KEY (TipoId)
