@@ -23,6 +23,8 @@ CREATE TABLE pentaho.dm_tempo (
   CONSTRAINT dm_tempo_pk PRIMARY KEY (TempoId)
 );
 
+DROP TABLE ufrn.dm_tipo;
+
 CREATE TABLE ufrn.dm_tipo (
   TipoID	INT             NOT NULL AUTO_INCREMENT,
   Fonte 	VARCHAR(100)   	NOT NULL,
