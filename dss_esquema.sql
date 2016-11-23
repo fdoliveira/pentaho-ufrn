@@ -23,6 +23,13 @@ CREATE TABLE pentaho.dm_tempo (
   CONSTRAINT dm_tempo_pk PRIMARY KEY (TempoId)
 );
 
+CREATE TABLE ufrn.dm_tipo (
+  TipoID	NUMERIC(11) 	NOT NULL,
+  Fonte 	VARCHAR(100)   	NOT NULL,
+  Resumo 	VARCHAR(100) 	NOT NULL,
+  CONSTRAINT dm_tipo_pk PRIMARY KEY (TipoId)
+);
+
 CREATE TABLE dm_geo (
   GeoID				      NUMBER(11)	NOT NULL,
   CodMunicipioGeo   NUMBER(7)		NOT NULL,
