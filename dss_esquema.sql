@@ -19,6 +19,7 @@ CREATE TABLE ufrn.dm_tipo (
 
 DROP TABLE ufrn.ft_empregos;
 
+
 CREATE TABLE ufrn.ft_empregos (
   EmpregoID 	INT  NOT NULL AUTO_INCREMENT,
   TempoID   	INT  NOT NULL,
@@ -28,3 +29,14 @@ CREATE TABLE ufrn.ft_empregos (
   CONSTRAINT ft_empregos_tempo_fk FOREIGN KEY(TempoID) REFERENCES ufrn.dm_tempo(TempoID),
   CONSTRAINT ft_empregos_tipo_fk  FOREIGN KEY(TipoID) REFERENCES ufrn.dm_tipo(TipoID)
 );
+
+SELECT * FROM ufrn.dm_tempo;
+SELECT COUNT(*) FROM ufrn.dm_tempo;
+SELECT * FROM ufrn.dm_tipo;
+
+TRUNCATE ufrn.dm_tempo;
+DELETE FROM ufrn.dm_tempo;
+
+
+SELECT MIN(TempoID) FROM ufrn.dm_tempo WHERE anoTempo = 2003 AND MesTempo = 1; 
+SELECT * FROM ufrn.dm_tempo WHERE tempoID = 1097;
